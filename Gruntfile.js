@@ -5,10 +5,10 @@ module.exports = function(grunt) {
 		sass: {
 			build: {
 				options: {
-					stye: 'compressed'
+					style: 'expanded'
 				},
 				files: {
-					'assets/css/screen.css':'assets/scss/screen.scss'
+					'assets/css/screen.css':'assets/scss/*'
 				}
 			}
 		},
@@ -34,8 +34,17 @@ module.exports = function(grunt) {
 				files: 'assets/scss/screen.scss',
 				tasks: 'sass'
 			}
+		},
+		connect: {
+			server: {
+				options: {
+					// hostname: 'localhost',
+					port: 1337,
+					livereload: true
+				}
+			}
 		}
 	});
 
-	grunt.registerTask('default', ['watch']);
-}
+	grunt.registerTask('default', ['connect','watch']);
+};
