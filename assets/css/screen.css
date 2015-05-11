@@ -1,4 +1,65 @@
-h1 {
-  color: purple;
-  font-family: "Lucida Console", Monaco, monospace;
+.page-header {
+  margin: 0;
+  height: 75px;
+}
+
+#myCarousel {
+  background-color: #b3b3b3;
+  height: 550px;
+  margin-bottom: 5px;
+}
+@media screen and (max-width: 700px) {
+  #myCarousel {
+    display: none;
+  }
+}
+
+.carousel-caption {
+  display: tabel-cell;
+}
+
+div[class*="col-"] {
+  margin: 0;
+  padding: 0;
+}
+div[class*="col-"]:first-child {
+  padding-right: 5px;
+}
+
+.pledge-tile {
+  background-color: #989898;
+  display: table;
+  height: 295px;
+  width: 100%;
+  padding: 20px;
+}
+.pledge-tile .title {
+  display: table-cell;
+  margin: 0 auto;
+}
+
+.about-tile {
+  height: 140px;
+}
+
+section {
+  margin-top: 30px;
+  margin-bottom: 80px;
+  padding: 0 30px 30px 30px;
+}
+
+aside {
+  border-left: 1px solid #666;
+  margin-top: 30px;
+  padding: 0 30px 30px 30px;
+}
+
+footer {
+  background-color: #424143;
+  color: #fff;
+  padding: 30px;
+  text-align: center;
+}
+footer a {
+  color: #fff;
 }
