@@ -1,3 +1,22 @@
+body {
+  color: #414042;
+  font: 16px/1.75em;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3 {
+  text-transform: uppercase;
+}
+
+a {
+  color: #414042;
+  text-decoration: underline;
+}
+a:hover {
+  color: #008C95;
+}
+
 .page-header {
   margin: 0;
   height: 75px;
@@ -5,8 +24,15 @@
 
 #myCarousel {
   background-color: #b3b3b3;
-  height: 550px;
+  height: auto;
   margin-bottom: 5px;
+}
+#myCarousel .item > img {
+  width: 100%;
+}
+#myCarousel p {
+  font-size: 16px;
+  line-height: 20px;
 }
 @media screen and (max-width: 700px) {
   #myCarousel {
@@ -26,40 +52,127 @@ div[class*="col-"]:first-child {
   padding-right: 5px;
 }
 
-.pledge-tile {
+div.tiles {
   background-color: #989898;
-  display: table;
+  overflow: hidden;
   height: 295px;
-  width: 100%;
-  padding: 20px;
-}
-.pledge-tile .title {
-  display: table-cell;
-  margin: 0 auto;
 }
 
 .about-tile {
   height: 140px;
 }
 
+section, aside {
+  margin-top: 50px;
+  padding-top: 15px;
+}
+
 section {
-  margin-top: 30px;
-  margin-bottom: 80px;
-  padding: 0 30px 30px 30px;
+  border-right: 1px solid #666;
+  margin-bottom: 50px;
+  padding-right: 70px;
+}
+section h2 {
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 991px) {
+  section {
+    padding-right: 10px;
+  }
+}
+
+article {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 aside {
-  border-left: 1px solid #666;
-  margin-top: 30px;
-  padding: 0 30px 30px 30px;
+  padding-left: 40px;
+}
+aside article {
+  padding-left: 30px;
+}
+aside article:first-child {
+  background-color: #b3b3b3;
+  padding-bottom: 50px;
+  padding-top: 50px;
+  margin-bottom: 70px;
+}
+aside h3 {
+  color: #414042;
+  font-size: 24px;
+  letter-spacing: 5px;
+}
+aside #demo-12-col {
+  background: green;
+  height: 30vh;
+}
+aside .col-xs-2 {
+  background: yellow;
+  height: 100%;
+  border: solid;
+}
+@media screen and (max-width: 995px) {
+  aside {
+    padding-left: 20px;
+  }
+  aside article {
+    padding-left: 5px;
+  }
+  aside article:first-child {
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  aside {
+    padding-left: 0;
+  }
+  aside h3, aside p {
+    text-align: center;
+  }
+  aside article {
+    padding-left: 5px;
+  }
+  aside article:first-child {
+    padding-bottom: 20px;
+    padding-top: 20px;
+    margin-bottom: 10px;
+  }
+  aside .social h3 {
+    display: none;
+  }
+  aside .col-xs-2 {
+    background-color: yellow;
+  }
 }
 
 footer {
   background-color: #424143;
   color: #fff;
-  padding: 30px;
+  padding: 50px;
   text-align: center;
 }
+footer p, footer a {
+  margin: 0;
+  padding: 0;
+}
 footer a {
+  border-left: 1px solid #fff;
   color: #fff;
+  display: inline-block;
+  margin-left: 10px;
+  padding-left: 10px;
+}
+
+/* STYLE GUIDE */
+.sub-headline {
+  font-style: italic;
+}
+
+.headline {
+  font-weight: bold;
+  font-size: 32px;
+  color: #414042;
+  letter-spacing: 5px;
 }
