@@ -14,50 +14,19 @@ a {
 		color: #008C95;
 	}
 }
-.page-header {
-	margin: 0;
-	height: 75px;
-}
-#myCarousel {
-	background-color: #b3b3b3;
-	height: auto;
-	margin-bottom: 5px;
-	.item > img {
-		width: 100%;
-	}
-	p {
-		font-size: 16px;
-		line-height: 20px;
-	}
-
-	@media screen and (max-width: 700px) {
-		display: none;
-	}
-}
-.carousel-caption {
-	display: tabel-cell;
-}
 div[class*="col-"] {
 	margin: 0;
 	padding: 0;
-
-	&:first-child {
-		padding-right: 5px;
-	}
-}
-div.tiles {
-	background-color: #989898;
-	overflow: hidden;
-	height: 295px;
-}
-
-.about-tile {
-	height: 140px;
-
 }
 section, aside {
 	margin-top: 50px;
 	padding-top: 15px;
+
+	@media screen and (max-width: 768px) {
+		border: none;
+		margin-top: 0;
+		padding: 0 30px;
+	}
 }
 section {
 	border-right: 1px solid #666;
@@ -94,16 +63,7 @@ aside {
 		font-size: 24px;
 		letter-spacing: 5px;
 	}
-	#demo-12-col{
-    background:green;
-    height: 30vh;
-}
 
-.col-xs-2{
-    background: yellow;
-    height:100%;   
-    border: solid;
-}
 	@media screen and (max-width: 995px) {
 		padding-left: 20px;
 
@@ -132,9 +92,6 @@ aside {
 
 		.social h3 {
 			display: none;
-		}
-		.col-xs-2 {
-			background-color: yellow;
 		}
 	}
 }
@@ -166,4 +123,97 @@ footer {
 	font-size: 32px;
 	color: #414042; 
 	letter-spacing: 5px;
+}
+
+.tile {
+	background-color: yellow;
+	overflow: hidden;
+	height: 145px;
+	margin-top: 5px;
+	padding: 20px;
+	&:first-child {
+		margin-top: 0;
+	}
+	@media screen and (max-width: 768px) {
+		margin-left: 5px;
+		margin-right: 5px;
+	}
+}
+.masthead {
+	height: 295px;
+	background-color: red;
+	margin: 0 5px 0 0;
+
+	@media screen and (max-width: 768px) {
+		margin: 0 5px 5px 5px;
+	}
+}
+.page-header {
+	margin: 0;
+	height: 75px;
+}
+#myCarousel {
+	background-color: #b3b3b3;
+	height: auto;
+	margin-bottom: 5px;
+	.item > img {
+		width: 100%;
+	}
+	p {
+		font-size: 16px;
+		line-height: 20px;
+	}
+
+	@media screen and (max-width: 768px) {
+		display: none;
+	}
+}
+.social ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+
+	li {
+		background-color: #b3b3b3;
+		float: left;
+		height: 40px;
+		margin-left: 	20px;
+		width: 40px;
+		&:first-child {
+			margin-left: 0;
+		}
+	}
+}
+
+
+@media screen and (max-width: 768px) {
+	section, aside {
+		border: none;
+		margin-top: 0;
+	}
+	section {
+		padding: 0 30px;
+		margin-bottom: 0;
+	}
+	aside {
+		padding: 0;
+	}
+	article {
+		margin-bottom: 20px;
+	}
+	aside article {
+		padding-left: 0;
+	}
+	.social ul {
+		overflow: hidden;
+		li {
+			background-color: #b3b3b3;
+			margin-left: 1%;
+			margin-right: 1%;
+			width: 18%;
+			&:first-child {
+				margin-left: 1%;
+			}
+		}
+	}
 }
