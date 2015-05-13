@@ -26,10 +26,12 @@ module.exports = function(grunt) {
 			html: {
 				files: 'index.html'
 			},
+			/*
 			js: {
 				files: 'assets/js/main.js',
 				tasks: 'jshint'
 			},
+			*/
 			css: {
 				files: 'assets/scss/screen.scss',
 				tasks: 'sass'
@@ -46,5 +48,6 @@ module.exports = function(grunt) {
 		}
 	});
 
-	grunt.registerTask('default', ['connect','watch']);
+	grunt.registerTask('default', ['connect', 'watch']);
+	grunt.registerTask('build', ['sass']);
 };
