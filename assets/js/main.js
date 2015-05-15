@@ -1,11 +1,11 @@
 DemandConnectSettings = {
-        orgId: '00Di0000000HPkiEAG',
-        specialCampaigns: {
+	orgId: '00Di0000000HPkiEAG',
+	specialCampaigns: {
 
-        },
-        campaigns: {
-                hcmacid: 'HC4__ExternalId__c'
-        }
+	},
+	campaigns: {
+		hcmacid: 'HC4__ExternalId__c'
+	}
 };
 
 DemandConnectFormSettings = {
