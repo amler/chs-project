@@ -1,6 +1,8 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700);
 body {
   color: #414042;
-  font: 16px/1.75em;
+  cursor: default;
+  font: 400 16px/1.75em 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -9,12 +11,20 @@ h1, h2, h3 {
   text-transform: uppercase;
 }
 
+ul {
+  padding-left: 1.5em;
+}
+
 a {
   color: #414042;
   text-decoration: underline;
 }
 a:hover {
   color: #008C95;
+  text-decoration: none;
+}
+a.btn {
+  text-decoration: none;
 }
 
 div[class*="col-"] {
@@ -59,12 +69,6 @@ aside {
 aside article {
   padding-left: 30px;
 }
-aside article:first-child {
-  background-color: #b3b3b3;
-  padding-bottom: 50px;
-  padding-top: 50px;
-  margin-bottom: 70px;
-}
 aside h3 {
   color: #414042;
   font-size: 24px;
@@ -102,6 +106,13 @@ aside h3 {
   }
 }
 
+.navbar-right {
+  margin-top: 25px;
+}
+.navbar-right a {
+  background: transparent !important;
+}
+
 footer {
   background-color: #424143;
   color: #fff;
@@ -126,43 +137,33 @@ footer a {
 }
 
 .headline {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 32px;
   color: #414042;
   letter-spacing: 5px;
 }
 
 .tile {
-  background-color: yellow;
+  background-color: #f38a00;
   overflow: hidden;
-  height: 145px;
-  margin-top: 5px;
+  margin: 5px 0 0 0;
+  min-height: 240px;
   padding: 20px;
+  width: auto;
 }
 .tile:first-child {
   margin-top: 0;
 }
+.tile.masthead {
+  background-color: #008996;
+  margin-right: 5px;
+}
 @media screen and (max-width: 768px) {
   .tile {
     margin-left: 5px;
+    margin-top: 5px !important;
     margin-right: 5px;
   }
-}
-
-.masthead {
-  height: 295px;
-  background-color: red;
-  margin: 0 5px 0 0;
-}
-@media screen and (max-width: 768px) {
-  .masthead {
-    margin: 0 5px 5px 5px;
-  }
-}
-
-.page-header {
-  margin: 0;
-  height: 75px;
 }
 
 #myCarousel {
@@ -191,15 +192,19 @@ footer a {
 .social ul li {
   background-color: #b3b3b3;
   float: left;
-  height: 40px;
-  margin-left: 20px;
-  width: 40px;
-}
-.social ul li:first-child {
-  margin-left: 0;
+  margin-bottom: 10px;
+  margin-right: 10px;
 }
 
 @media screen and (max-width: 768px) {
+  body {
+    text-align: center;
+  }
+
+  ul {
+    list-style: none;
+  }
+
   section, aside {
     border: none;
     margin-top: 0;
@@ -222,6 +227,10 @@ footer a {
     padding-left: 0;
   }
 
+  .navbar-brand {
+    float: none;
+  }
+
   .social ul {
     overflow: hidden;
   }
@@ -233,6 +242,14 @@ footer a {
   }
   .social ul li:first-child {
     margin-left: 1%;
+  }
+
+  footer a {
+    border: 0;
+    display: block;
+    margin-left: 0;
+    margin-top: 10px;
+    padding-left: 0;
   }
 }
 
