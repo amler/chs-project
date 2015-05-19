@@ -6,6 +6,12 @@ body {
   margin: 0;
   padding: 0;
 }
+@media screen and (max-width: 768px) {
+  body {
+    overflow: hidden;
+    overflow-y: auto;
+  }
+}
 
 h1, h2, h3 {
   text-transform: uppercase;
@@ -131,6 +137,13 @@ footer a {
   padding-left: 10px;
 }
 
+form ul {
+  list-style-type: none;
+}
+form ul label {
+  margin-left: 5px;
+}
+
 /* STYLE GUIDE */
 .sub-headline {
   font-style: italic;
@@ -196,6 +209,57 @@ footer a {
   margin-right: 10px;
 }
 
+.navbar .navbar-brand {
+  background: transparent url("../img/logos/chs.svg") center center no-repeat;
+  background-size: 300px 65px;
+  height: 65px;
+  width: 300px;
+}
+.navbar .navbar-brand a {
+  display: inline-block;
+  height: 65px;
+  width: 300px;
+}
+.navbar h2 {
+  margin-top: 10px;
+}
+.navbar h1 {
+  display: block;
+  left: 50%;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 5px;
+  width: 200px;
+  transform: translateX(-50%);
+}
+.navbar h1 img {
+  height: auto;
+  width: 100%;
+}
+@media screen and (max-width: 990px) {
+  .navbar h2 {
+    transform-origin: 0 0;
+    transform: scale(0.7) translateY(20px);
+  }
+}
+@media screen and (max-width: 768px) {
+  .navbar h1, .navbar h2 {
+    display: inline-block;
+    margin: 50px auto;
+    max-width: 300px;
+    padding: 0;
+    position: static;
+    text-align: center;
+    width: auto;
+    transform: none;
+  }
+}
+
+.navbar > .container .navbar-brand {
+  margin-left: 0;
+}
+
 @media screen and (max-width: 768px) {
   body {
     text-align: center;
@@ -252,5 +316,6 @@ footer a {
     padding-left: 0;
   }
 }
-
-/*# sourceMappingURL=screen.css.map */
+#myModal {
+  overflow: scroll;
+}
