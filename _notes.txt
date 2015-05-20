@@ -1,0 +1,14 @@
+
+TO-DO:
+	* add page description and keywords meta data
+	* add Google Analytics tracking to page
+	* integrate survey gizmo forms
+
+
+* Will need all CSS and JavaScript to be embedded within HTML file.
+
+Images will go here:
+http://www.carolinashealthcare.org/images/lch/5210/
+
+The campaign landing page will be:
+http://www.carolinashealthcare.org/healthytogether
