@@ -15,11 +15,23 @@ body {
 h1, h2, h3 {
 	text-transform: uppercase;
 }
+
+img {
+	border: 0;
+	display: inline-block;
+	height: auto;
+	max-width: 100%;
+	width: auto;
+	-ms-interpolation-mode: bicubic;
+}
+
+
 ul {
 	padding-left: 1.5em;
 }
 a {
 	color: #414042;
+	cursor: pointer;
 	text-decoration: underline;
 	&:hover {
 		color: #008C95;
@@ -149,23 +161,53 @@ form {
 }
 
 .tile {
-	background-color: #f38a00;
-	overflow: hidden;
+	background-color: #008b94;
+	color: #fff !important;
+	display: block;
+	font-size: 23px;
+	line-height: 1.2em;
 	margin: 5px 0 0 0;
-	min-height: 240px;
-	padding: 20px;
+	min-height: 260px;
+	overflow: hidden;
+	padding: 20px 30px;
+	text-decoration: none !important;
 	width: auto;
+	&:hover {
+		color: #fff;
+		opacity: 0.8;
+	}
 	&:first-child {
 		margin-top: 0;
 	}
-	&.masthead {
-		background-color: #008996;
+	&.box-1,
+	&.box-2 {
 		margin-right: 5px;
+	}
+	&.box-1 {
+		background: transparent url('../img/titles/box-1.gif') center center no-repeat;
+		background-size: 100% 100%;
+	}
+	&.box-2 {
+		background: transparent url('../img/titles/box-2.gif') center center no-repeat;
+		background-size: 100% 100%;
+	}
+	&.box-3 {
+		background: transparent url('../img/titles/box-3.gif') center center no-repeat;
+		background-size: 100% 100%;
+	}
+	&.box-4 {
+		background: transparent url('../img/titles/box-4.gif') center center no-repeat;
+		background-size: 100% 100%;
 	}
 	@media screen and (max-width: 768px) {
 		margin-left: 5px;
 		margin-top: 5px !important;
 		margin-right: 5px;
+		min-height: 0;
+		h2 {
+			margin: 0;
+			padding: 0;
+		}
 	}
 }
 
