@@ -117,11 +117,11 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-6 col-xs-12">
-				<a class="box-1 tile" data-toggle="modal" data-target="#modal-pledge">
+				<a class="box-1 tile" data-toggle="modal" data-target="#modal-pledge" href="#modal-pledge">
 					<h2><img src="assets/img/titles/take-the-pledge.svg" alt="Take the Pledge" /></h2>
 					<p>Join the 5210 League, by taking the pledge and showing your commitment to leading a healthy lifestyle.</p>
 				</a>
-				<a class="box-2 tile" data-toggle="modal" data-target="#modal-quiz">
+				<a class="box-2 tile" data-toggle="modal" data-target="#modal-quiz" href="#modal-quiz">
 					<h2><img src="assets/img/titles/take-the-quiz.svg" alt="Take the Quiz" /></h2>
 				</a>
 			</div>
@@ -180,6 +180,9 @@
 			<p>&copy; Carolinas HealthCare System 2015 <a href="http://www.carolinashealthcare.org/chs-notice-of-privacy-practices">Privacy Policy</a>
 		</div>
 	</footer>
+
+
+
 
 
 
@@ -405,6 +408,14 @@
 	</div>
 
 
+
+
+
+
+
+
+
+
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 
 	<!-- build:js inline -->
@@ -413,7 +424,20 @@
 	<!-- /build -->
 
 	<script>
-
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		ga('create', 'UA-63295901-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+	<script>
+		$('a').click(function($event){
+			if (window.ga !== undefined) {
+				var href = $($event.currentTarget).attr('href');
+				ga('send', 'event', 'link', 'clicked', href);
+			}
+		});
 	</script>
 </body>
 </html>
