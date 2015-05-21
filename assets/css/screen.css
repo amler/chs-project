@@ -1,6 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:500,700);
 body {
-  color: #414042;
+  color: #999;
   cursor: default;
   font: 500 16px/1.75em 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   margin: 0;
@@ -14,7 +14,15 @@ body {
 }
 
 h1, h2, h3 {
+  color: #008b94;
+  font-size: 32px;
+  font-weight: 700;
   text-transform: uppercase;
+}
+
+.banner {
+  margin: 0 0 15px 0;
+  padding: 0;
 }
 
 img {
@@ -26,20 +34,31 @@ img {
   -ms-interpolation-mode: bicubic;
 }
 
+.modal,
+.modal h4,
+.modal strong,
+.modal .sg-question-title {
+  color: #333;
+}
+
 ul {
   padding-left: 1.5em;
 }
+ul.events {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
 
 a {
-  color: #414042;
+  color: #008c95;
   cursor: pointer;
-  text-decoration: underline;
+  text-decoration: none;
+  transition: opacity 0.15s linear;
 }
 a:hover {
-  color: #008C95;
-  text-decoration: none;
-}
-a.btn {
+  color: #008c95;
+  opacity: 0.7;
   text-decoration: none;
 }
 
@@ -61,7 +80,6 @@ section, aside {
 }
 
 section {
-  border-right: 1px solid #666;
   margin-bottom: 50px;
   padding-right: 70px;
 }
@@ -80,15 +98,12 @@ article {
 }
 
 aside {
+  border-left: 1px solid #008995;
+  margin-bottom: 70px;
   padding-left: 40px;
 }
 aside article {
   padding-left: 30px;
-}
-aside h3 {
-  color: #414042;
-  font-size: 24px;
-  letter-spacing: 5px;
 }
 @media screen and (max-width: 995px) {
   aside {
@@ -122,15 +137,21 @@ aside h3 {
   }
 }
 
+.navbar {
+  margin-bottom: 0;
+}
+
 .navbar-right {
-  margin-top: 25px;
+  font-size: 24px;
+  font-weight: 700;
+  margin: 12px 0 0 0;
 }
 .navbar-right a {
   background: transparent !important;
 }
 
 footer {
-  background-color: #424143;
+  background-color: #ef8200;
   color: #fff;
   padding: 50px;
   text-align: center;
@@ -146,24 +167,15 @@ footer a {
   margin-left: 10px;
   padding-left: 10px;
 }
+footer a:hover {
+  color: #fff;
+}
 
 form ul {
   list-style-type: none;
 }
 form ul label {
   margin-left: 5px;
-}
-
-/* STYLE GUIDE */
-.sub-headline {
-  font-style: italic;
-}
-
-.headline {
-  font-weight: 700;
-  font-size: 32px;
-  color: #414042;
-  letter-spacing: 5px;
 }
 
 .tile {
@@ -181,13 +193,16 @@ form ul label {
 }
 .tile:hover {
   color: #fff;
-  opacity: 0.8;
-}
-.tile:first-child {
-  margin-top: 0;
+  opacity: 0.7;
 }
 .tile.box-1, .tile.box-2 {
   margin-right: 5px;
+}
+.tile.box-3, .tile.box-4 {
+  margin-left: 5px;
+}
+.tile.box-1, .tile.box-3 {
+  margin-bottom: 20px;
 }
 .tile.box-1 {
   background: transparent url("../img/titles/box-1.gif") center center no-repeat;
@@ -207,9 +222,7 @@ form ul label {
 }
 @media screen and (max-width: 768px) {
   .tile {
-    margin-left: 5px;
-    margin-top: 5px !important;
-    margin-right: 5px;
+    margin: 20px 5px !important;
     min-height: 0;
   }
   .tile h2 {
@@ -237,30 +250,26 @@ form ul label {
 }
 
 .social ul {
-  list-style-type: none;
+  list-style: none;
   margin: 0;
   padding: 0;
 }
 .social ul li {
-  background-color: #b3b3b3;
-  float: left;
+  display: inline-block;
   margin-bottom: 10px;
-  margin-right: 10px;
+  margin-right: 15px;
 }
 
 .navbar .navbar-brand {
-  background: transparent url("../img/logos/chs.svg") center center no-repeat;
-  background-size: 300px 65px;
   height: 65px;
   width: 300px;
-}
-.navbar .navbar-brand a {
-  display: inline-block;
-  height: 65px;
-  width: 300px;
+  margin: 0;
+  padding: 0;
 }
 .navbar h2 {
-  margin-top: 10px;
+  margin: 0;
+  padding: 0;
+  transform: translateY(10px);
 }
 .navbar h1 {
   display: block;
@@ -268,7 +277,7 @@ form ul label {
   margin: 0;
   padding: 0;
   position: absolute;
-  top: 5px;
+  top: 35px;
   width: 200px;
   transform: translateX(-50%);
 }
@@ -285,7 +294,7 @@ form ul label {
 @media screen and (max-width: 768px) {
   .navbar h1, .navbar h2 {
     display: inline-block;
-    margin: 50px auto;
+    margin: 20px auto;
     max-width: 300px;
     padding: 0;
     position: static;
@@ -302,6 +311,12 @@ form ul label {
 @media screen and (max-width: 768px) {
   body {
     text-align: center;
+  }
+
+  p {
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   ul {
@@ -334,17 +349,8 @@ form ul label {
     float: none;
   }
 
-  .social ul {
-    overflow: hidden;
-  }
-  .social ul li {
-    background-color: #b3b3b3;
-    margin-left: 1%;
-    margin-right: 1%;
-    width: 18%;
-  }
-  .social ul li:first-child {
-    margin-left: 1%;
+  .navbar-right {
+    margin: 25px 0;
   }
 
   footer a {
