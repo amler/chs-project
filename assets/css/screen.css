@@ -269,6 +269,9 @@ form ul label {
 .navbar h2 {
   margin: 0;
   padding: 0;
+  -webkit-transform: translateY(10px);
+  -moz-transform: translateY(10px);
+  -ms-transform: translateY(10px);
   transform: translateY(10px);
 }
 .navbar h1 {
@@ -279,6 +282,9 @@ form ul label {
   position: absolute;
   top: 35px;
   width: 200px;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
   transform: translateX(-50%);
 }
 .navbar h1 img {
@@ -287,7 +293,13 @@ form ul label {
 }
 @media screen and (max-width: 990px) {
   .navbar h2 {
+    -webkit-transform-origin: 0 0;
+    -moz-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
     transform-origin: 0 0;
+    -webkit-transform: scale(0.7) translateY(20px);
+    -moz-transform: scale(0.7) translateY(20px);
+    -ms-transform: scale(0.7) translateY(20px);
     transform: scale(0.7) translateY(20px);
   }
 }
@@ -300,6 +312,9 @@ form ul label {
     position: static;
     text-align: center;
     width: auto;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
     transform: none;
   }
 }
@@ -313,12 +328,13 @@ form ul label {
     text-align: center;
   }
 
+  /*
   p {
-    max-width: 480px;
-    margin-left: auto;
-    margin-right: auto;
+  	max-width: 480px;
+  	margin-left: auto;
+  	margin-right: auto;
   }
-
+  */
   ul {
     list-style: none;
   }
@@ -364,5 +380,3 @@ form ul label {
 #myModal {
   overflow: scroll;
 }
-
-/*# sourceMappingURL=screen.css.map */

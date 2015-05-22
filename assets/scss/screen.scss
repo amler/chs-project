@@ -261,7 +261,11 @@ form {
 	h2 {
 		margin: 0;
 		padding: 0;
-		transform: translateY(10px);
+		-webkit-transform: translateY(10px);
+		   -moz-transform: translateY(10px);
+			-ms-transform: translateY(10px);
+				transform: translateY(10px);
+
 	}
 	h1 {
 		display: block;
@@ -271,7 +275,10 @@ form {
 		position: absolute;
 		top: 35px;
 		width: 200px;
-		transform: translateX(-50%);
+		-webkit-transform: translateX(-50%);
+		   -moz-transform: translateX(-50%);
+			-ms-transform: translateX(-50%);
+				transform: translateX(-50%);
 		img {
 			height: auto;
 			width: 100%;
@@ -279,8 +286,14 @@ form {
 	}
 	@media screen and (max-width: 990px) {
 		h2 {
-			transform-origin: 0 0;
-			transform: scale(0.7) translateY(20px);
+			-webkit-transform-origin: 0 0;
+		   -moz-transform-origin: 0 0;
+			-ms-transform-origin: 0 0;
+				transform-origin: 0 0;
+			-webkit-transform: scale(0.7) translateY(20px);
+			   -moz-transform: scale(0.7) translateY(20px);
+				-ms-transform: scale(0.7) translateY(20px);
+					transform: scale(0.7) translateY(20px);
 		}
 	}
 	@media screen and (max-width: 768px) {
@@ -292,7 +305,10 @@ form {
 			position: static;
 			text-align: center;
 			width: auto;
-			transform: none;
+			-webkit-transform: none;
+			   -moz-transform: none;
+				-ms-transform: none;
+					transform: none;
 		}
 	}
 }
@@ -303,11 +319,13 @@ form {
 	body {
 		text-align: center;
 	}
+	/*
 	p {
 		max-width: 480px;
 		margin-left: auto;
 		margin-right: auto;
 	}
+	*/
 	ul {
 		list-style: none;
 	}
