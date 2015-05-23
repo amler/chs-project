@@ -1,8 +1,8 @@
-@import url(http://fonts.googleapis.com/css?family=Roboto:500,700);
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,700);
 body {
   color: #999;
   cursor: default;
-  font: 500 16px/1.75em 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font: 400 16px/1.75em 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -20,6 +20,12 @@ h1, h2, h3 {
   text-transform: uppercase;
 }
 
+p.form-intro {
+  color: #008b94;
+  margin-bottom: 30px;
+  margin-top: 100px;
+}
+
 .banner {
   margin: 0 0 15px 0;
   padding: 0;
@@ -34,11 +40,21 @@ img {
   -ms-interpolation-mode: bicubic;
 }
 
-.modal,
+.modal {
+  color: #999;
+}
+
 .modal h4,
 .modal strong,
 .modal .sg-question-title {
-  color: #333;
+  color: #008b94;
+}
+
+.btn-primary {
+  background-color: #008b94;
+}
+.btn-primary:hover {
+  background-color: #005b61;
 }
 
 ul {
@@ -48,6 +64,9 @@ ul.events {
   list-style: none;
   margin-left: 0;
   padding-left: 0;
+}
+ul.events > li {
+  margin-bottom: 30px;
 }
 
 a {
@@ -138,13 +157,13 @@ aside article {
 }
 
 .navbar {
-  margin-bottom: 0;
+  margin-bottom: 20px;
 }
 
 .navbar-right {
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 700;
-  margin: 12px 0 0 0;
+  margin: 22px 0 0 0;
 }
 .navbar-right a {
   background: transparent !important;
@@ -269,10 +288,10 @@ form ul label {
 .navbar h2 {
   margin: 0;
   padding: 0;
-  -webkit-transform: translateY(10px);
-  -moz-transform: translateY(10px);
-  -ms-transform: translateY(10px);
-  transform: translateY(10px);
+  -webkit-transform: translateY(15px);
+  -moz-transform: translateY(15px);
+  -ms-transform: translateY(15px);
+  transform: translateY(15px);
 }
 .navbar h1 {
   display: block;
