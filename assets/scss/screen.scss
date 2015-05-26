@@ -153,6 +153,7 @@ aside {
 .navbar {
 	margin-bottom: 20px;
 }
+.phone,
 .navbar-right {
 	font-size: 18px;
 	font-weight: 700;
@@ -161,6 +162,11 @@ aside {
 		background: transparent !important;
 	}
 }
+
+.phone {
+	display: none;
+}
+
 
 footer {
 	background-color: #ef8200;
@@ -368,8 +374,14 @@ form {
 	}
 	.navbar-brand {
 		float: none;
+		margin-bottom: 30px !important;
 	}
 	.navbar-right {
+		display: none;
+		margin: 25px 0;
+	}
+	.phone {
+		display: block;
 		margin: 25px 0;
 	}
 	footer a {

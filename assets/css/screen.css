@@ -160,13 +160,19 @@ aside article {
   margin-bottom: 20px;
 }
 
+.phone,
 .navbar-right {
   font-size: 18px;
   font-weight: 700;
   margin: 22px 0 0 0;
 }
+.phone a,
 .navbar-right a {
   background: transparent !important;
+}
+
+.phone {
+  display: none;
 }
 
 footer {
@@ -382,9 +388,16 @@ form ul label {
 
   .navbar-brand {
     float: none;
+    margin-bottom: 30px !important;
   }
 
   .navbar-right {
+    display: none;
+    margin: 25px 0;
+  }
+
+  .phone {
+    display: block;
     margin: 25px 0;
   }
 
