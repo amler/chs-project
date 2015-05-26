@@ -6,7 +6,7 @@ body {
 	font: 400 16px/1.75em 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;;
 	margin: 0;
 	padding: 0;
-	@media screen and (max-width: 768px) {
+	@media screen and (max-width: 769px) {
 		overflow: hidden;
 		overflow-y: auto;
 	}
@@ -87,7 +87,7 @@ section, aside {
 	margin-top: 50px;
 	padding-top: 15px;
 
-	@media screen and (max-width: 768px) {
+	@media screen and (max-width: 767px) {
 		border: none;
 		margin-top: 0;
 		padding: 0 30px;
@@ -129,7 +129,7 @@ aside {
 			}
 		}
 	}
-	@media screen and (max-width: 768px) {
+	@media screen and (max-width: 767px) {
 		padding-left: 0;
 
 		h3, p {
@@ -165,7 +165,7 @@ aside {
 footer {
 	background-color: #ef8200;
 	color: #fff;
-	padding: 50px;
+	padding: 50px 0;
 	text-align: center;
 	p, a {
 		margin: 0;
@@ -235,7 +235,7 @@ form {
 		background: transparent url('../img/titles/box-4.gif') center center no-repeat;
 		background-size: 100% 100%;
 	}
-	@media screen and (max-width: 768px) {
+	@media screen and (max-width: 767px) {
 		margin: 20px 5px !important;
 		min-height: 0;
 		h2 {
@@ -257,7 +257,7 @@ form {
 		line-height: 20px;
 	}
 
-	@media screen and (max-width: 768px) {
+	@media screen and (max-width: 767px) {
 		display: none;
 	}
 }
@@ -316,7 +316,7 @@ form {
 					transform: scale(0.7) translateY(20px);
 		}
 	}
-	@media screen and (max-width: 768px) {
+	@media screen and (max-width: 767px) {
 		h1, h2 {
 			display: inline-block;
 			margin: 20px auto;
@@ -335,7 +335,7 @@ form {
 .navbar > .container .navbar-brand {
 	margin-left: 0;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
 	body {
 		text-align: center;
 	}

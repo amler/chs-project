@@ -6,7 +6,7 @@ body {
   margin: 0;
   padding: 0;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   body {
     overflow: hidden;
     overflow-y: auto;
@@ -90,7 +90,7 @@ section, aside {
   margin-top: 50px;
   padding-top: 15px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   section, aside {
     border: none;
     margin-top: 0;
@@ -136,7 +136,7 @@ aside article {
     padding-top: 20px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   aside {
     padding-left: 0;
   }
@@ -172,7 +172,7 @@ aside article {
 footer {
   background-color: #ef8200;
   color: #fff;
-  padding: 50px;
+  padding: 50px 0;
   text-align: center;
 }
 footer p, footer a {
@@ -239,7 +239,7 @@ form ul label {
   background: transparent url("../img/titles/box-4.gif") center center no-repeat;
   background-size: 100% 100%;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .tile {
     margin: 20px 5px !important;
     min-height: 0;
@@ -262,7 +262,7 @@ form ul label {
   font-size: 16px;
   line-height: 20px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   #myCarousel {
     display: none;
   }
@@ -322,7 +322,7 @@ form ul label {
     transform: scale(0.7) translateY(20px);
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .navbar h1, .navbar h2 {
     display: inline-block;
     margin: 20px auto;
@@ -342,7 +342,7 @@ form ul label {
   margin-left: 0;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   body {
     text-align: center;
   }
