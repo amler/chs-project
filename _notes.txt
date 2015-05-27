@@ -1,10 +1,4 @@
 
-TO-DO:
-	* update meta data with actual descriptions
-	* integrate survey gizmo forms
-	* add Google Analytics tracking to form submissions
-
-
 * Will need all CSS and JavaScript to be embedded within HTML file.
 
 Images will go here:
