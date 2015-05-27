@@ -5,7 +5,7 @@ module.exports = function(grunt) {
 		sass: {
 			build: {
 				options: {
-					style: 'expanded'
+					style: 'compressed'
 				},
 				files: {
 					'assets/css/screen.css':'assets/scss/*'
