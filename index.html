@@ -68,8 +68,42 @@
 
 	<div class="container">
 		<div class="row">
+			<!--
 			<div class="col-sm-12 col-xs-12">
 				<h2 class="banner"><img src="assets/img/logos/banner.png" alt="Join the League Today!" /></h2>
+			</div>
+			-->
+			<div id="myCarousel" class="carousel slide" data-ride="carousel">
+				<ol class="carousel-indicators">
+					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+					<li data-target="#myCarousel" data-slide-to="1"></li>
+					<li data-target="#myCarousel" data-slide-to="2"></li>
+				</ol>
+				<div class="carousel-inner" role="listbox">
+					<div class="item active">
+						<img src="assets/img/logos/banner.jpg" alt="Join the League Today!" />
+						<!--
+						<div class="carousel-caption">
+							<h3>First slide label</h3>
+							<p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+						</div>
+						-->
+					</div>
+					<div class="item">
+						<img src="assets/img/logos/banner.jpg" alt="Join the League Today!" />
+					</div>
+					<div class="item">
+						<img src="assets/img/logos/banner.jpg" alt="Join the League Today!" />
+					</div>
+				</div>
+				<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+					<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+					<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				</a>
 			</div>
 		</div>
 	</div>
@@ -97,7 +131,7 @@
 			<div class="col-sm-push-1 col-sm-5 col-xs-12">
 				<article>
 					<h2 class="headline">Take action with The 5210 League!</h2>
-					<p>The 5210 League is a group of individuals dedicated to leading a healthy and active life. Led by the knowledgeable Dr. Fit and the ever moving, always in motion Action Ace, the league strives to teach families how to be healthy together.</p>
+					<p>The 5210 League is a group of individuals dedicated to leading a healthy and active life. Led by the knowledgeable Dr. Fit and the ever-moving, always-in-motion Action Ace, the league strives to teach families how to be healthy together.</p>
 					<p>By eating more fruits and vegetables, being physically active for at least one hour per day, limiting recreational screen time, and avoiding sugary drinks, your family can join the League and make the pledge to be healthy together.</p>
 					<p>Check out this site for fun and easy ways you can incorporate healthy habits into your daily routine. Take the pledge and join the 5210 League today!</p>
 				</article>
@@ -143,13 +177,21 @@
 				<div class="col-sm-4 col-xs-12">
 					<h2>Heathy Articles</h2>
 					<div class="articles">
+						<a class="article" data-toggle="modal" data-target="#modal-article-4" href="#modal-article-4">
+							<img src="assets/img/temp/article-photo-1.jpg" alt="" />
+							<p><strong>Hard to Swallow</strong><br />How Much Sugar is Hiding in Kids’ Drinks?<br /><br /><span>June 16, 2015<br />ANA-MARIA TEMPLE, MD</span></p>
+						</a>
+						<a class="article" data-toggle="modal" data-target="#modal-article-3" href="#modal-article-3">
+							<img src="assets/img/temp/article-photo-1.jpg" alt="" />
+							<p><strong>Turn off the Screen, Turn on the Fun</strong><br />Children and adolescents spend nearly 30 hours per week viewing television.<br /><br /><span>June 16, 2015<br />ROBERT ALEXANDER, MD</span></p>
+						</a>
 						<a class="article" data-toggle="modal" data-target="#modal-article-2" href="#modal-article-2">
 							<img src="assets/img/temp/article-photo-1.jpg" alt="" />
-							<p><strong>How to Exercise as a Family – Get the Whole Crew Moving</strong><br />Like any other positive (or negative!) influence, focusing in on it early in life tends to make it stick.<br /><br /><span>June 16, 2015<br />ROBERT ALEXANDER, MD</span></p>
+							<p><strong>How to Exercise as a Family – Get the Whole Crew Moving</strong><br />Like any other positive (or negative!) influence, focusing in on it early in life tends to make it stick.<br /><br /><span>June 15, 2015<br />ROBERT ALEXANDER, MD</span></p>
 						</a>
 						<a class="article" data-toggle="modal" data-target="#modal-article-1" href="#modal-article-1">
 							<img src="assets/img/temp/article-photo-1.jpg" alt="" />
-							<p><strong>Raising a Healthy Eater</strong><br />Fitting five servings of fruits and vegetables a day may seem daunting, but it’s actually doable.<br /><br /><span>June 16, 2015<br />ANA-MARIA TEMPLE, MD</span></p>
+							<p><strong>Raising a Healthy Eater</strong><br />Fitting five servings of fruits and vegetables a day may seem daunting, but it’s actually doable.<br /><br /><span>June 15, 2015<br />ANA-MARIA TEMPLE, MD</span></p>
 						</a>
 					</div>
 				</div>
@@ -276,6 +318,140 @@
 		</div>
 	</div>
 
+	<!-- Article 3 -->
+	<div id="modal-article-3" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title sg-title"><span>Turn off the Screen, Turn on the Fun</span></h4>
+				</div>
+				<div class="modal-body">
+					<h4>Robert Alexander, MD</h4>
+					<p>Children and adolescents spend nearly 30 hours per week viewing television. That’s more than any other activity except sleeping! And that doesn’t even include the other time spent in front of screens, from cell phones and computers to video games.</p>
+					<p>It’s true – limiting screen time can be hard. But one way to start changing this habit is to consider all of the other things to do instead of staring at a screen. Here’s a good start:</p>
+					<ul>
+						<li>Ride a bike</li>
+						<li>Go on a nature hike</li>
+						<li>Put together a puzzle</li>
+						<li>Turn on the music and dance</li>
+						<li>Read a book or magazine</li>
+						<li>Spend time catching up with your family</li>
+						<li>Take your kids to the park or beach</li>
+						<li>Play board games</li>
+						<li>Walk, run or jog</li>
+						<li>Start a journal</li>
+						<li>Play ball (basketball, catch, soccer, etc.)</li>
+						<li>Go to the library</li>
+						<li>Explore gyms in your community</li>
+						<li>Rollerblade</li>
+						<li>Play charades</li>
+					</ul>
+					<p>Next, set some ground rules. To start, establish healthy attitudes toward screens. Using a computer to do research for a history report is a great use of technology. Spending an entire sunny weekend trying to make it to the next level of a video game is a tragic waste of time. Know how much screen time your child is using and set some basic rules: No TV or computer before homework or chores are done. Use a timer to keep track of time. When the bell goes off, so does the TV or computer.</p>
+					<p>For healthy screen time, pediatricians often recommend these tips:
+					<ul>
+						<li>No TV or computer in the room where the child sleeps</li>
+						<li>No TV or computer for a child age 2 or younger</li>
+						<li>One hour of educational TV or computer time between ages 2 and 5</li>
+						<li>After age 5, 2 hours or less of TV or computer</li>
+					</ul>
+					<p>Other suggestions include:</p>
+					<ul>
+						<li>Eliminating TV time during the week</li>
+						<li>Don’t turn on the TV during meal time</li>
+						<li>Help your child plan television viewing in advance</li>
+						<li>Keep books, magazines, and board games in the family room</li>
+						<li>Make a list of fun activities to do instead of being in front of a screen</li>
+						<li>Set family guidelines for age-appropriate show</li>
+					</ul>
+					<p>And parents, it’s time to tame your screen time, too. Set a good example with your own screen viewing habits. Be a role model and follow your own rules.</p>
+					<p>Remember, life is lots more fun when you join in!</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Article 4 -->
+	<div id="modal-article-4" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title sg-title"><span>Hard to Swallow</span></h4>
+				</div>
+				<div class="modal-body">
+					<h3>How Much Sugar is Hiding in Kids’ Drinks?</h3>
+					<h4>Ana-Maria Temple, MD</h4>
+					<p>Although our bodies need sugar for energy, we don’t need 180 pounds of the sweet stuff. That’s the average amount of sugar eaten by Americans in a year. And that’s a whole lot of sweetness.</p>
+					<p>The major sources of added sugars in American diets are regular soft drinks and fruit drinks along with candy, cakes, cookies and pies. While most parents routinely limit the amount of candy consumed by little ones, they may not be as vigilant when it comes to drinks.</p>
+					<p>As part of the 5-2-1-0 movement (5 or more servings of fruits and vegetables, 2 hours or less recreational screen time and 1 hour or more of physical activity), the 0 stands for sugary drinks, meaning it’s best to eliminate them in favor of more water and low-fat milk. (If your child is 2 or younger, whole milk is recommended.)</p>
+					<p>Cut back slowly on sugar-filled drinks, juices and sports drinks – both for children and grown-ups, and read the labels on beverages.</p>
+					<p>A common misconception is that 100 percent fruit juice is healthy, that it has vitamins that kids need and is better than other juices. However, the process of creating these juices removes any health benefits. First, fruits are juiced, removing pulp and peels which contain fiber. Second, the juice is boiled at 210 degrees for pasteurization (so it can last on the shelf until 2018). This heating process kills any vitamins that may be present in juice. Any nutrient mentioned on the packaging is added by the processing plant. By the time it hits the grocery shelf, sugar is the only thing left over.</p>
+					<p>For children, the American Heart Association recommends no more than 130 to 170 calories (3 to 4 teaspoons) per day of added sugar. A good rule of thumb to remember is that roughly 4 grams of sugar equals 1 teaspoon of sugar.</p>
+					<p>Even drinks that sound healthy may have too much sugar. For instance, some canned teas contain more than 50 grams of sugar and most smoothies are a minefield of sugar and calories.</p>
+					<h4>Common Drink Choices</h4>
+					<table style="width:100%;">
+						<tr>
+							<td><strong>Drink</strong></td>
+							<td><strong>Size</strong></td>
+							<td><strong>Total Calories</strong></td>
+							<td><strong>Sugar Grams</strong></td>
+							<td><strong>Teaspoons Sugar</strong></td>
+						</tr>
+						<tr>
+							<td>Cola</td>
+							<td>20 oz</td>
+							<td>250 cal</td>
+							<td>65 g</td>
+							<td>15</td>
+						</tr>
+						<tr>
+							<td>100% Apple Juice</td>
+							<td>15.2 oz</td>
+							<td>220 cal</td>
+							<td>48 g</td>
+							<td>11</td>
+						</tr>
+						<tr>
+							<td>Sports Drinks</td>
+							<td>20 oz</td>
+							<td>130 cal</td>
+							<td>34 g</td>
+							<td>8</td>
+						</tr>
+						<tr>
+							<td>Vitamin Water</td>
+							<td>20 oz</td>
+							<td>125 cal</td>
+							<td>32.5 g</td>
+							<td>8</td>
+						</tr>
+						<tr>
+							<td>Energy Drinks</td>
+							<td>16 oz</td>
+							<td>200 cal</td>
+							<td>54 g</td>
+							<td>13</td>
+						</tr>
+						<tr>
+							<td>Water</td>
+							<td>20 oz</td>
+							<td>0 cal</td>
+							<td></td>
+							<td></td>
+						</tr>
+					</table>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
 
 
 
@@ -290,7 +466,6 @@
 				<div class="modal-body">
 
 					<form action="http://www.surveygizmo.com/collab/2150830/5210-League-Healthy-Quiz-TEST" method="post" enctype="multipart/form-data" class="sg-survey-form" id="sg_FormFor2150830" target="_blank" novalidate>
-						<!--<div class="sg-cc-badge sg-cc-badge-page">0</div>-->
 						<div class="sg-hidden-inputs">
 							<input type="hidden" name="sg_navchoice" id="sg_navchoice" value="" />
 							<input type="hidden" name="sg_currentpageid" id="sg_currentpageid" value="1" />
@@ -307,7 +482,6 @@
 										<input type="hidden" id="sgE-2150830-1-4-meta" name="sgE-2150830-1-4-meta" value="hidden=false&amp;required=false" />
 										<input type="hidden" id="sgE-2150830-1-4-time" name="sgE-2150830-1-4-time" value="" />
 										<div class="sg-instructions">
-											Doctor Fit, Action Ace and the entire 5210 League understand the importance of leading a healthy and active lifestyle. Together with everyone’s commitment, your whole family can take the pledge to make healthier choices and become more physically active.<br /><br />
 											Take this short quiz to better understand your child’s current health routines and then learn ways you can help reinforce their healthy habits.
 										</div>
 									</div>
@@ -422,7 +596,7 @@
 										<input type="hidden" id="sgE-2150830-1-9-meta" name="sgE-2150830-1-9-meta" value="hidden=false&amp;required=false" />
 										<input type="hidden" id="sgE-2150830-1-9-time" name="sgE-2150830-1-9-time" value="" />
 										<div class="sg-question-title">
-											<span class="sg-question-number">5.</span> How many minutes does your child spend time watching TV, playing video games or using electronics in a day?
+											<span class="sg-question-number">5.</span> How much time does your child spend time watching TV, playing video games or using electronics in a day?
 										</div>
 										<div class="sg-question-options">
 											<ul class="sg-list sg-list-vertical sg-list-vertical-flipped sg-labels-right">
@@ -495,13 +669,13 @@
 										<input type="hidden" id="sgE-2152282-1-4-meta" name="sgE-2152282-1-4-meta" value="hidden=false&amp;required=false" />
 										<input type="hidden" id="sgE-2152282-1-4-time" name="sgE-2152282-1-4-time" value="" />
 
-										<div class="sg-instructions">Join the 5210 League by answering one question and then taking the 5210 Pledge.</div>
+										<div class="sg-instructions">Join the 5210 League by taking the 5210 Pledge and then answering one question.</div>
 									</div>
 									<div id="sgE-2152282-1-3-box" class="sg-question sg-type-checkbox sg-required">
 										<input type="hidden" id="sgE-2152282-1-3-meta" name="sgE-2152282-1-3-meta" value="hidden=false&amp;required=true" />
 										<input type="hidden" id="sgE-2152282-1-3-time" name="sgE-2152282-1-3-time" value="" />
 										<div class="sg-question-title" title="This question is required.">
-											<span class="sg-question-number">1.</span> <a>Which of the following daily healthy habits are you most interested in for improving your family’s lifestyle? Please check all that apply.</a> <strong class="sg-required-icon" title="This question is required.">*<span class="sg-access-helper">This question is required.</span></strong>
+											<span class="sg-question-number">1.</span> <a>Which of the following healthy habits are you most interested in for improving your family's lifestyle? Please check all that apply.</a> <strong class="sg-required-icon" title="This question is required.">*<span class="sg-access-helper">This question is required.</span></strong>
 										</div>
 										<div class="sg-question-options">
 											<ul class="sg-list sg-list-vertical sg-list-vertical-flipped sg-labels-right">
@@ -511,7 +685,7 @@
 												</li>
 												<li>
 													<input type="checkbox" class="sg-input sg-input-checkbox" name="sgE-2152282-1-3-10010" id="sgE-2152282-1-3-10010" value="10010" title="Learning ways to  limit recreational screen time" />
-													<label for="sgE-2152282-1-3-10010">Learning ways to  limit recreational screen time</label>
+													<label for="sgE-2152282-1-3-10010">Learning ways to limit recreational screen time</label>
 												</li>
 												<li>
 													<input type="checkbox" class="sg-input sg-input-checkbox" name="sgE-2152282-1-3-10011" id="sgE-2152282-1-3-10011" value="10011" title="Being more physically active" />
@@ -530,11 +704,11 @@
 										<div class="sg-question-title">
 											<label for="sgE-2152282-1-2-10001-element">
 												Just like Action Ace, Doctor Fit and the entire 5210 League, our family pledges to lead a healthier, more active lifestyle together. We further pledge to support each other in making healthy choices and will follow the principles of the 5210 program whenever possible.<br /><br />
-												Every day, we’ll strive to:<br /><br />
-													 5 – Eat five servings of fruits and vegetables<br />
-													 2 – Limit recreational screen time to less than two hours per day<br />
-													 1 – Be physically active for at least one hour per day<br />
-													 0 – Drink more water and milk, while avoiding sugary drinks<br /><br />
+												Every day, we’ll try to follow the 5210 Program including:<br /><br />
+													5 – Eat five servings of fruits and vegetables<br />
+													2 – Limit recreational screen time to less than two hours per day<br />
+													1 – Be physically active for at least one hour per day<br />
+													0 – Drink more water and milk, while avoiding sugary drinks<br /><br />
 												By taking this pledge, we agree to do our best to live a healthy lifestyle together as a family.<br />
 											</label>
 										</div>
@@ -544,7 +718,7 @@
 													<label for="sgE-2152282-1-2-10001">
 														<input type="checkbox" class="sg-input sg-input-checkbox" name="sgE-2152282-1-2-10001" id="sgE-2152282-1-2-10001" value="10001" title="Yes, our family pledges to lead a healthy life by following the 5210 Program!" />
 														&nbsp;
-														Yes, our family pledges to lead a healthy life by following the 5210 Program!
+														We agree to do our best to live a healthy life together as a family and will join the ranks of the 5210 League
 													</label>
 												</li>
 											</ul>
